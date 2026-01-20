@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.navbar {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  height: 94px;
+}
+
+.header-logo {
+  padding: 25px 50px;
+}
+
+.header-nav {
+  display: flex; /*Гибкость*/
+  flex-basis: 100%; /*Большая ширина - 100% это на сколько есть свободного мнеста*/
+  list-style: none; /*Отключаем точки*/
+  padding: 0 50px; /*Отключаем отступы и задаем по сторонам отступ 50px*/
+  margin: 0;
+}
+
+.header-nav-link {
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 50px;
+  color: inherit; /*Озгначает взять цвет у родительского класса*/
+}
+
+.header-phone {
+  flex-shrink: 0; /*flex-shrink отвечает за то, что говорит элементу "сжиматься(скукоживаться) не надо"*/
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 50px;
+}
+
+.header-phone-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: inherit;
+}
+
+.button {
+  width: 313px;
+  height: 76px;
+  padding: 25px 60px;
+  color: #fff;
+  background: #3a71d1;
+  display: flex; /*если есть gap, то эти три пришем тоже для выравнивания текста*/
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  flex-shrink: 0;
+}
+
+.header-button {
+  height: 100%;
+}
