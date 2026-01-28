@@ -2,12 +2,19 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Bebas Neue Book";
+  src: url("../fonts/BebasNeueBook.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .body {
   font-family: "Noto Sans", sans-serif;
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -79,17 +86,24 @@
 }
 
 .button {
-  width: 313px;
-  height: 76px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
   padding: 25px 60px;
   color: #fff;
   background: #3a71d1;
-  display: flex; /*если есть gap, то эти три пришем тоже для выравнивания текста*/
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  /* display: flex; если есть gap, то эти три пришем тоже для выравнивания текста*/
+  /* align-items: center; /*если есть gap, то эти три пришем тоже для выравнивания текста*/
+  /* justify-content: center; /*если есть gap, то эти три пришем тоже для выравнивания текста*/
+  /* gap: 10px; */
   border: none;
+  /* flex-shrink: 0; */
+  display: inline-block;
+  cursor: pointer;
+}
+.navbar-button {
   flex-shrink: 0;
+  height: 100%;
 }
 
 .header-button {
@@ -100,4 +114,50 @@
   background: #5c8ee6;
   width: 150px;
   height: 2px;
+}
+.header-content {
+  padding-top: 150px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+.header-title {
+  font-family: "Bebas Neue Book";
+  max-width: 1080px;
+  font-size: 80px;
+  line-height: 120%;
+  margin: 30px 0;
+}
+.header-text {
+  font-family: "Bebas Neue Book";
+  max-width: 720px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  margin-bottom: 50px;
+}
+
+.header-features {
+  display: flex;
+  min-height: 160px;
+  padding: 0;
+  margin-top: 100px;
+  list-style: none;
+  color: #fff;
+  position: relative;
+}
+
+.header-features-item {
+  padding: 30px 50px;
+  border: 1px solid rgba(235, 235, 240, 0.2);
+}
+
+.header-feauters-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+}
+.header-features-item:not(:last-child) {
+  border-right: none;
 }
