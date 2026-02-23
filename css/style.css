@@ -274,11 +274,41 @@ html {
   margin-right: 1.25rem;
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1460px) {
   html {
-    font-style: 14px;
+    font-style: 13px;
   }
-  .header-image {
-    background-position: center;
+  .header-logo {
+    padding: 2rem;
+  }
+  .logo-svg {
+    min-width: 6rem;
+  }
+  .header-nav {
+    padding-left: 2rem;
+  }
+  .header-nav-item:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .header-phone {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-phone {
+    display: none;
+  }
+  .navbar {
+    height: 5rem;
+  }
+  .navbar-button {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 12px;
   }
 }
